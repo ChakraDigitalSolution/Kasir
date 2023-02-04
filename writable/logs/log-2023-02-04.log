@@ -1,0 +1,349 @@
+INFO - 2023-02-04 03:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 03:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 03:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 03:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 03:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 03:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 03:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 03:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 03:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:20:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-04 05:38:54 --> Unsupported operand types: stdClass + string
+in APPPATH\Controllers\Kasir.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangAddStock()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-02-04 05:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 05:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-04 05:50:36 --> view(): Argument #2 ($data) must be of type array, stdClass given, called in C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php on line 80
+in SYSTEMPATH\Common.php on line 1163.
+ 1 APPPATH\Controllers\Kasir.php(80): view('gudang/edit', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangEdit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 05:56:56 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Kasir.php on line 78.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kasir.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kasir')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kasir')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Kasir', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-02-04 05:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 06:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-04 06:33:30 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+10 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump([...], Object(CodeIgniter\HTTP\Files\UploadedFile))
+11 APPPATH\Controllers\Kasir.php(91): dd([...], Object(CodeIgniter\HTTP\Files\UploadedFile))
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 06:33:50 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+10 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump(Object(CodeIgniter\HTTP\Files\UploadedFile))
+11 APPPATH\Controllers\Kasir.php(91): dd(Object(CodeIgniter\HTTP\Files\UploadedFile))
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 06:43:07 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+10 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump(Object(CodeIgniter\HTTP\Files\UploadedFile))
+11 APPPATH\Controllers\Kasir.php(91): dd(Object(CodeIgniter\HTTP\Files\UploadedFile))
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 06:44:02 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+10 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump(Object(CodeIgniter\HTTP\Files\UploadedFile))
+11 APPPATH\Controllers\Kasir.php(91): dd(Object(CodeIgniter\HTTP\Files\UploadedFile))
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 06:45:52 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+10 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump(Object(CodeIgniter\HTTP\Files\UploadedFile))
+11 APPPATH\Controllers\Kasir.php(92): dd(Object(CodeIgniter\HTTP\Files\UploadedFile))
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 06:46:44 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+10 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump(Object(CodeIgniter\HTTP\Files\UploadedFile))
+11 APPPATH\Controllers\Kasir.php(91): dd(Object(CodeIgniter\HTTP\Files\UploadedFile))
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 06:46:51 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+10 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump(Object(CodeIgniter\HTTP\Files\UploadedFile))
+11 APPPATH\Controllers\Kasir.php(91): dd(Object(CodeIgniter\HTTP\Files\UploadedFile))
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 06:46:52 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+10 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump(Object(CodeIgniter\HTTP\Files\UploadedFile))
+11 APPPATH\Controllers\Kasir.php(91): dd(Object(CodeIgniter\HTTP\Files\UploadedFile))
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 07:00:43 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+10 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump(Object(CodeIgniter\HTTP\Files\UploadedFile))
+11 APPPATH\Controllers\Kasir.php(91): dd(Object(CodeIgniter\HTTP\Files\UploadedFile))
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 07:00:45 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+10 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump(Object(CodeIgniter\HTTP\Files\UploadedFile))
+11 APPPATH\Controllers\Kasir.php(91): dd(Object(CodeIgniter\HTTP\Files\UploadedFile))
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 07:06:27 --> date(): Argument #2 ($timestamp) must be of type ?int, bool given
+in SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php on line 185.
+ 1 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(185): date('Y', false)
+ 2 SYSTEMPATH\ThirdParty\Kint\Zval\Representation\SplFileInfoRepresentation.php(151): Kint\Zval\Representation\SplFileInfoRepresentation->getMTime()
+ 3 SYSTEMPATH\ThirdParty\Kint\Parser\SplFileInfoPlugin.php(53): Kint\Zval\Representation\SplFileInfoRepresentation->__construct(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 4 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(632): Kint\Parser\SplFileInfoPlugin->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 5 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(571): Kint\Parser\Parser->applyPlugins(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\InstanceValue), 2)
+ 6 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(138): Kint\Parser\Parser->parseObject(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 7 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(383): Kint\Parser\Parser->parse(Object(CodeIgniter\HTTP\Files\UploadedFile), Object(Kint\Zval\Value))
+ 8 SYSTEMPATH\ThirdParty\Kint\Parser\Parser.php(131): Kint\Parser\Parser->parseArray([...], Object(Kint\Zval\Value))
+ 9 SYSTEMPATH\ThirdParty\Kint\Kint.php(285): Kint\Parser\Parser->parse([...], Object(Kint\Zval\Value))
+10 SYSTEMPATH\ThirdParty\Kint\Kint.php(268): Kint\Kint->dumpVar([...], Object(Kint\Zval\Value))
+11 SYSTEMPATH\ThirdParty\Kint\Kint.php(575): Kint\Kint->dumpAll([...], [...])
+12 SYSTEMPATH\Helpers\kint_helper.php(27): Kint\Kint::dump([...])
+13 APPPATH\Controllers\Kasir.php(93): dd([...])
+14 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangUpdate()
+15 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+16 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 07:11:00 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\Kasir.php on line 92.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kasir.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kasir')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kasir')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Kasir', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-02-04 07:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:38:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:45:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 07:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-04 08:20:19 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Kasir.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangDelete('5')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-04 08:20:27 --> Attempt to read property "foto" on null
+in APPPATH\Controllers\Kasir.php on line 122.
+ 1 APPPATH\Controllers\Kasir.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "foto" on null', 'APPPATH\\Controllers\\Kasir.php', 122)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->gudangDelete('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-02-04 08:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-04 08:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

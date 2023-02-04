@@ -33,7 +33,12 @@ $routes->get('/', 'Kasir::index');
 $routes->get('/Kasir', 'Kasir::penjualan');
 $routes->get('/Gudang', 'Kasir::gudang');
 $routes->get('/Gudang/tambah', 'Kasir::gudangTambah');
+$routes->get('/Gudang/edit/(:any)', 'Kasir::gudangEdit/$1');
+$routes->get('/Gudang/view/(:any)', 'Kasir::gudangView/$1');
 $routes->post('/Gudang/simpan', 'Kasir::gudangSimpan');
+$routes->post('/Gudang/addStock', 'Kasir::gudangAddStock');
+$routes->post('/Gudang/update', 'Kasir::gudangUpdate');
+$routes->post('/Gudang/delete/(:any)', 'Kasir::gudangDelete/$1');
 
 /*
  * --------------------------------------------------------------------

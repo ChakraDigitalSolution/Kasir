@@ -14,11 +14,11 @@
                 <table class="table table-hover" id="used-table">
                     <thead>
                         <tr>
-                            <th>No.</th>
+                            <th class="text-center">No.</th>
                             <th>Nama Barang</th>
-                            <th>Stock</th>
+                            <th class="text-center">Stock</th>
                             <th>Harga</th>
-                            <th>Aksi</th>
+                            <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -27,14 +27,17 @@
                         foreach ($row as $r) {
                         ?>
                             <tr>
-                                <td><?= $no; ?></td>
+                                <td class="text-center fw-bold"><?= $no++; ?></td>
                                 <td class=" text-wrap"><strong><?= $r['nama']; ?></strong></td>
-                                <td><span class="badge bg-label-success me-1"><?= $r['stock']; ?></span></td>
+                                <td class="text-center"><span class="badge bg-label-success me-1"><?= $r['stock']; ?></span></td>
                                 <td><?= $r['harga']; ?></td>
-                                <td>
-                                    <button type="button" class="btn btn-success btn-sm">View</button>
-                                    <button type="button" class="btn btn-warning btn-sm">Edit</button>
-                                    <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                                <td class="text-end">
+                                    <form action="<?= base_url('/Gudang/delete/' . $r['id']); ?>" method="post">
+                                        <button type="button" data-namabarang="<?= $r['nama']; ?>" data-id="<?= $r['id']; ?>" class="restock btn btn-success btn-sm">Restock</button>
+                                        <a href="<?= base_url('/Gudang/view/' . $r['id']); ?>" class="btn btn-info btn-sm">View</a>
+                                        <a href="<?= base_url('/Gudang/edit/' . $r['id']); ?>" class="btn btn-warning btn-sm">Edit</a>
+                                        <button type="submit" class="btn btn-danger btn-sm flex-inline">Delete</button>
+                                    </form>
                                 </td>
                             </tr>
                         <?php
@@ -45,7 +48,11 @@
         </div>
     </div>
 
+    <!-- MODAL -->
+    <div id="divModal">
 
+    </div>
+    <!-- END MODAL -->
     <div class="content-backdrop fade"></div>
 </div>
 <!-- Content wrapper -->
@@ -72,6 +79,45 @@
             confirmButtonText: 'Ok'
         })
     }
+
+    $('.restock').click(function(e) {
+        // e.preventDefault();
+        const namaBarang = $(this).data('namabarang');
+        const id = $(this).data('id');
+        console.log(namaBarang)
+        $('#divModal').html(`
+        <div class="modal fade" id="basicModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <form action="<?= base_url('/Gudang/addStock'); ?>" method="post">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel1">Restock ${namaBarang}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label for="nameBasic" class="form-label">Jumlah stok yang ditambahkan</label>
+                                <input name="stock" type="number" id="addStock" class="form-control" placeholder="00000000" required />
+                                <input name="id" type="text" class="d-none" value="${id}"/>
+                                <input name="nama" type="text" class="d-none" value="${namaBarang}"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        `);
+
+        $('#basicModal').modal('show')
+    });
 </script>
 
 <?= $this->endSection(); ?>

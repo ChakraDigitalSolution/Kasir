@@ -16,12 +16,12 @@
                             <div class="col-12 mb-3">
                                 <div class="input-group input-group-merge">
                                     <span class="input-group-text" id="basic-addon-search31"><i class="bx bx-search"></i></span>
-                                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon-search31" />
+                                    <input id="searchProduct" type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon-search31" />
                                 </div>
                             </div>
                             <?php foreach ($row as $r) {
                             ?>
-                                <div class="col-12 col-sm-6 col-md-3 mb-3">
+                                <div class="col-12 col-sm-6 col-md-3 mb-3 product">
                                     <div class="card h-100">
                                         <img class="card-img-top" src="<?= base_url('/assets/foto/' . $r['foto']); ?>" alt="Card image cap" style="height: 10em;" />
                                         <div class="card-body px-0">
