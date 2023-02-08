@@ -6,12 +6,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>Shop Cart</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="<?= base_url(''); ?>/assets/assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="<?= base_url(''); ?>/assets/assets/img/favicon/logo.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,6 +47,12 @@
     <link rel="stylesheet" href="<?= base_url(''); ?>/assets/assets/css/sweetalert.css">
     <script src="<?= base_url(''); ?>/assets/assets/js/sweetalert.js"></script>
 
+
+    <style>
+        .swal2-container {
+            z-index: 9999 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,7 +60,7 @@
     <script type="text/javascript" src="<?= base_url(''); ?>/assets/js/jquery.js"></script>
 
     <!-- JQUERY MASKING -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="<?= base_url(''); ?>/assets/js/jquery.mask.js"></script>
 
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
@@ -97,7 +103,8 @@
     <script src="<?= base_url(''); ?>/assets/assets/js/dashboards-analytics.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+    <script type="text/javascript" src="<?= base_url(''); ?>/assets/js/button.js"></script>
 
     <!-- DATATABLE -->
     <script type="text/javascript" charset="utf8" src="<?= base_url(''); ?>/assets/assets/js/datatable.js"></script>

@@ -5,7 +5,7 @@
 <div class="content-wrapper">
     <!-- Content -->
     <div class="container-xxl flex-grow-1 container-p-y">
-        <h4 class="fw-bold py-3 mb-4">Penjualan</h4>
+        <h4 class="fw-bold py-3 mb-4">Kasir</h4>
         <div class="row">
             <div class="col-12 col-md-9">
                 <!-- CARD DAFTAR BARANG -->
@@ -32,9 +32,9 @@
                                         </div>
                                         <div class="card-footer px-0 py-2">
                                             <div class="input-group justify-content-center border border-0">
-                                                <button type="button" data-tipebtn="minus" data-idbarang="<?= $r['id']; ?>" class="btn btn-primary btn-sm btn-counter">-</button>
+                                                <button type="button" data-stock="<?= $r['stock']; ?>" data-tipebtn="minus" data-idbarang="<?= $r['id']; ?>" class="btn btn-primary btn-sm btn-counter">-</button>
                                                 <span id="<?= $r['id']; ?>" data-counter="0" class="input-group-text text-center">0</span>
-                                                <button type="button" data-tipebtn="plus" data-idbarang="<?= $r['id']; ?>" class="btn btn-primary btn-sm btn-counter">+</button>
+                                                <button type="button" data-stock="<?= $r['stock']; ?>" data-tipebtn="plus" data-idbarang="<?= $r['id']; ?>" class="btn btn-primary btn-sm btn-counter">+</button>
                                             </div>
 
                                         </div>
@@ -72,7 +72,9 @@
                                 <h2 id="kembalian">Rp 0,00</h2>
                             </div>
                             <div class="col-12 d-flex ">
-                                <button type="button" class="btn btn-primary flex-fill">Bayar</button>
+                                <button type="button" id="btn-bayar" class="btn btn-primary flex-fill">
+                                    Bayar
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -90,6 +92,8 @@
 <script src="<?= base_url(''); ?>/assets/assets/js/extended-ui-perfect-scrollbar.js"></script>
 <script src="<?= base_url(''); ?>/assets/js/penjualan.js"></script>
 <script>
-
+    function base() {
+        return '<?= base_url(''); ?>';
+    }
 </script>
 <?= $this->endSection(); ?>

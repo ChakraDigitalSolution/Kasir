@@ -7,11 +7,11 @@ $(".btn-counter").click(function (e) {
   const idBarang = $(this).data("idbarang");
   const namaBarang = $(`h5#namaBarang${idBarang}`).html();
   const hargaBarang = $(`span#hargaBarang${idBarang}`).html();
-  // counter(idBarang, tipeBtn)
-  newCounter(idBarang, tipeBtn, namaBarang, hargaBarang);
+  const stock = $(this).data("stock");
+  newCounter(idBarang, tipeBtn, namaBarang, hargaBarang, stock);
 });
 
-function newCounter(id, tipe, nama, harga) {
+function newCounter(id, tipe, nama, harga, stock) {
   const span = $(`span#${id}`);
   let valSpan = parseInt(span.data("counter"));
   const intHarga = parseInt(harga.replace("Rp&nbsp;", "").replaceAll(".", ""));
@@ -19,6 +19,9 @@ function newCounter(id, tipe, nama, harga) {
   let total = 0;
   if (tipe === "plus") {
     newValSpan = valSpan + 1;
+    if (newValSpan > stock) {
+      return;
+    }
     total = intHarga * newValSpan;
     addListTransaksi(id, nama, newValSpan, total);
   } else {
@@ -149,3 +152,110 @@ $("#searchProduct").keyup(function (e) {
   }
 });
 // END SEARCH PRODUCT
+
+// BAYAR
+$("#btn-bayar").click(function (e) {
+  e.preventDefault();
+  let kembalian = $("#kembalian").html();
+  let uang = $("#uang").val();
+  if (total === 0) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Silakan Pilih Barang Terlebih Dahulu",
+    });
+    return;
+  }
+  if (kembalian == "Rp 0,00" && !uang) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Silakan Isikan Nominal Uang Terlebih Dahulu",
+    });
+    return;
+  }
+  if (kembalian == "Rp&nbsp;0,00" && !uang) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Silakan Isikan Nominal Uang Terlebih Dahulu",
+    });
+    return;
+  }
+  if (kembalian.substr(0, 1) == "-") {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: `Uang Kurang ${kembalian.replace("&nbsp;", " ").substr(1)}`,
+    });
+    return;
+  }
+  $.ajax({
+    type: "POST",
+    url: "Kasir/bayar",
+    data: {
+      data: list,
+      total: total,
+      uang: $("#uang").val().replaceAll(".", ""),
+      kembalian: parseInt(
+        kembalian.replaceAll(".", "").replace("Rp&nbsp;", "")
+      ),
+      nomorInvoice: "NIR-" + new Date().getTime(),
+    },
+    dataType: "json",
+    beforeSend: function () {
+      $("#btn-bayar").addClass("disabled");
+      $("#btn-bayar").html(`
+      <div class="spinner-border spinner-border-sm text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      `);
+    },
+    complete: function () {
+      $("#btn-bayar").removeClass("disabled");
+      $("#btn-bayar").html("Bayar");
+    },
+    success: function (response) {
+      const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: "btn-print-invoice",
+        },
+        buttonsStyling: true,
+      });
+      swalWithBootstrapButtons
+        .fire({
+          title: response.Berhasil,
+          text: "Apakah Anda Ingin Mencetak Invoice ?",
+          icon: "success",
+          showCancelButton: true,
+          confirmButtonText: "Yes",
+          cancelButtonText: "No",
+          reverseButtons: true,
+        })
+        .then((result) => {
+          if (result.isConfirmed) {
+            // print(response.nomorInvoice);
+            window.open(
+              base() + "/Transaksi/print/" + response.nomorInvoice,
+              "_blank"
+            );
+            document.addEventListener("visibilitychange", () => {
+              if (document.visibilityState === "visible") {
+                location.reload();
+              }
+            });
+          } else if (
+            /* Read more about handling dismissals below */
+            result.dismiss === Swal.DismissReason.cancel
+          ) {
+            location.reload();
+          }
+        });
+    },
+    error: function (xhr, ajaxOptions, thrownError) {
+      // alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+      console.log(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+    },
+  });
+});
+// END BAYAR

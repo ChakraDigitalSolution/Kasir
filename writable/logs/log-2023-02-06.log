@@ -1,0 +1,452 @@
+INFO - 2023-02-06 02:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-06 02:43:18 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Controllers\Kasir.php on line 152.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Kasir.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Kasir')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Kasir')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Kasir', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 03:09:44 --> Attempt to read property "nama" on array
+in APPPATH\Controllers\Kasir.php on line 162.
+ 1 APPPATH\Controllers\Kasir.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'APPPATH\\Controllers\\Kasir.php', 162)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->bayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 03:10:54 --> Attempt to read property "insert_id" on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 577.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(577): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "insert_id" on bool', 'SYSTEMPATH\\Database\\MySQLi\\Connection.php', 577)
+ 2 SYSTEMPATH\Model.php(835): CodeIgniter\Database\MySQLi\Connection->insertID()
+ 3 APPPATH\Controllers\Kasir.php(157): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->bayar()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-02-06 03:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-06 04:26:18 --> Undefined variable $row
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:26:26 --> Undefined variable $row
+in APPPATH\Controllers\Kasir.php on line 185.
+ 1 APPPATH\Controllers\Kasir.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Controllers\\Kasir.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:26:32 --> Array to string conversion
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:26:48 --> Array to string conversion
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:27:14 --> Array to string conversion
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:27:21 --> Array to string conversion
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:29:55 --> Array to string conversion
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:30:18 --> Array to string conversion
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:39:49 --> Array to string conversion
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:39:51 --> Array to string conversion
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:39:58 --> Array to string conversion
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:40:16 --> Array to string conversion
+in APPPATH\Views\Transaksi\index.php on line 45.
+ 1 APPPATH\Views\Transaksi\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Transaksi\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(185): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:57:58 --> Undefined variable $r
+in APPPATH\Views\Transaksi\index.php on line 77.
+ 1 APPPATH\Views\Transaksi\index.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $r', 'APPPATH\\Views\\Transaksi\\index.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(188): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:59:06 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'SYSTEMPATH\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Controllers\Kasir.php(183): CodeIgniter\Model->__call('select', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:59:27 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'SYSTEMPATH\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Controllers\Kasir.php(183): CodeIgniter\Model->__call('select', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 04:59:29 --> foreach() argument must be of type array|object, null given
+in SYSTEMPATH\Database\BaseBuilder.php on line 411.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(411): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'SYSTEMPATH\\Database\\BaseBuilder.php', 411)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->select(null)
+ 3 APPPATH\Controllers\Kasir.php(183): CodeIgniter\Model->__call('select', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-06 04:59:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`u...' at line 1 in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#9 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-06 04:59:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`u...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.`tanggal`, GROUP_CONCAT(transaksi_barang.nama, "("transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`uang`, `transaksi`.`kembalian`
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`id` = `transaksi_barang`.`id_transaksi`
+GROUP BY `transaksi`.`tanggal`
+ORDER BY `tanggal` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-06 05:01:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah ")") as barang, `transaksi`.`total_bayar`, `transaksi...' at line 1 in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#9 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-06 05:01:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah ")") as barang, `transaksi`.`total_bayar`, `transaksi...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.`tanggal`, GROUP_CONCAT(transaksi_barang.nama, "(" transaksi_barang.jumlah ")") as barang, `transaksi`.`total_bayar`, `transaksi`.`uang`, `transaksi`.`kembalian`
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`id` = `transaksi_barang`.`id_transaksi`
+GROUP BY `transaksi`.`tanggal`
+ORDER BY `tanggal` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-06 05:08:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`u...' at line 1 in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#9 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-06 05:08:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`u...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.`tanggal`, GROUP_CONCAT(transaksi_barang.nama, " - "transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`uang`, `transaksi`.`kembalian`
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`id` = `transaksi_barang`.`id_transaksi`
+GROUP BY `transaksi`.`tanggal`
+ORDER BY `tanggal` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-06 05:08:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`u...' at line 1 in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#9 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-06 05:08:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`u...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.`tanggal`, GROUP_CONCAT(transaksi_barang.nama, " 0 "transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`uang`, `transaksi`.`kembalian`
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`id` = `transaksi_barang`.`id_transaksi`
+GROUP BY `transaksi`.`tanggal`
+ORDER BY `tanggal` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-06 05:08:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`u...' at line 1 in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#9 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-06 05:08:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`u...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.`tanggal`, GROUP_CONCAT(transaksi_barang.nama, 0 transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`uang`, `transaksi`.`kembalian`
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`id` = `transaksi_barang`.`id_transaksi`
+GROUP BY `transaksi`.`tanggal`
+ORDER BY `tanggal` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-06 05:09:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`u...' at line 1 in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#9 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-06 05:09:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`u...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.`tanggal`, GROUP_CONCAT(transaksi_barang.nama, w transaksi_barang.jumlah) as barang, `transaksi`.`total_bayar`, `transaksi`.`uang`, `transaksi`.`kembalian`
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`id` = `transaksi_barang`.`id_transaksi`
+GROUP BY `transaksi`.`tanggal`
+ORDER BY `tanggal` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Kasir.php(186): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-02-06 05:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-06 05:44:36 --> view(): Argument #2 ($data) must be of type array, stdClass given, called in C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php on line 200
+in SYSTEMPATH\Common.php on line 1163.
+ 1 APPPATH\Controllers\Kasir.php(200): view('transaksi/print', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksiPrint('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 06:59:56 --> date_format(): Argument #1 ($object) must be of type DateTimeInterface, string given
+in APPPATH\Views\Transaksi\print.php on line 18.
+ 1 APPPATH\Views\Transaksi\print.php(18): date_format('2023-02-06 04:03:51', 'd/m/Y')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/print', [], true)
+ 5 APPPATH\Controllers\Kasir.php(205): view('transaksi/print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksiPrint('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 07:00:38 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\Transaksi\print.php on line 18.
+ 1 APPPATH\Views\Transaksi\print.php(18): date('2023-02-06 04:03:51', 'd/m/Y')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/print', [], true)
+ 5 APPPATH\Controllers\Kasir.php(205): view('transaksi/print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksiPrint('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 07:01:31 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\Transaksi\print.php on line 18.
+ 1 APPPATH\Views\Transaksi\print.php(18): date('d/m/Y', '2023-02-06 04:03:51')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/print', [], true)
+ 5 APPPATH\Controllers\Kasir.php(205): view('transaksi/print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksiPrint('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 07:03:01 --> date_format(): Argument #1 ($object) must be of type DateTimeInterface, string given
+in APPPATH\Views\Transaksi\print.php on line 18.
+ 1 APPPATH\Views\Transaksi\print.php(18): date_format('2023-02-06 04:03:51', 'd/m/Y H:i:s')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/print', [], true)
+ 5 APPPATH\Controllers\Kasir.php(204): view('transaksi/print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksiPrint('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 07:37:06 --> Undefined property: stdClass::$nomor_transaksi
+in APPPATH\Views\Transaksi\print.php on line 15.
+ 1 APPPATH\Views\Transaksi\print.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nomor_transaksi', 'APPPATH\\Views\\Transaksi\\print.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Transaksi\\print.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('transaksi/print', [], true)
+ 5 APPPATH\Controllers\Kasir.php(205): view('transaksi/print', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksiPrint('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 07:59:29 --> Undefined array key "data"
+in APPPATH\Controllers\Kasir.php on line 34.
+ 1 APPPATH\Controllers\Kasir.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'APPPATH\\Controllers\\Kasir.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->kasirBayar()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-02-06 08:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 08:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 08:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 08:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-06 09:41:43 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Kasir.php on line 202.
+ 1 APPPATH\Controllers\Kasir.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'APPPATH\\Controllers\\Kasir.php', 202)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->transaksiPrint('undefined')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-02-06 10:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 10:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 10:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 10:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 10:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 10:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 10:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 10:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 10:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-06 10:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

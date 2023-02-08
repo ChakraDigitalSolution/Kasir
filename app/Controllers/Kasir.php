@@ -8,20 +8,65 @@ class Kasir extends BaseController
 {
 
     protected $Gudang;
+    protected $Transaksi;
+    protected $TransaksiBarang;
 
+    // DASHBOARD
     public function index()
     {
         return view('index');
     }
+    // END DASHBOARD
 
-    public function penjualan()
+    // KASIR
+    public function kasir()
     {
         $data = [
             'row' => $this->Gudang->orderBy('nama')->findAll()
         ];
-        return view('penjualan/index', $data);
+        return view('kasir/index', $data);
     }
 
+    public function kasirBayar()
+    {
+        if (!$this->request->isAJAX()) exit('Access Denied');
+        $data = $this->request->getVar();
+        $barang = $data['data'];
+        $total = $data['total'];
+        $uang = $data['uang'];
+        $kembalian = $data['kembalian'];
+        $nomorInvoice = $data['nomorInvoice'];
+
+        $this->Transaksi->save([
+            'tanggal' => date('Y-m-d H:i:s'),
+            'total_bayar' => $total,
+            'uang' => $uang,
+            'kembalian' => $kembalian,
+            'nomor_invoice' => $nomorInvoice
+        ]);
+
+        $idTransaksi = $this->Transaksi->insertID();
+
+        foreach ($barang as $brg) {
+            $this->TransaksiBarang->save([
+                'id_transaksi' => $idTransaksi,
+                'nama' => $brg['nama'],
+                'jumlah' => $brg['jumlah'],
+                'total_perbarang' => $brg['total']
+            ]);
+
+            $this->Gudang->set('stock', 'stock-' . (int)$brg['jumlah'], false)->where('id', $brg['id'])->update();
+        }
+        $res = [
+            'Berhasil' => 'Transaksi Berhasil Dilakukan',
+            'nomorInvoice' => $nomorInvoice
+        ];
+
+        echo json_encode($res);
+    }
+    // KASIR
+
+    // GUDANG
     public function gudang()
     {
         $data = [
@@ -135,4 +180,35 @@ class Kasir extends BaseController
         ];
         return view('gudang/view', $data);
     }
+    // END GUDANG
+
+    // TRANSAKSI
+    public function transaksi()
+    {
+        $data = [
+            'row' => $this->Transaksi->select('transaksi.id, transaksi.tanggal, GROUP_CONCAT(transaksi_barang.nama, " (",transaksi_barang.jumlah,")") as barang, transaksi.total_bayar, transaksi.uang, transaksi.kembalian, transaksi.nomor_invoice')
+                ->join('transaksi_barang', 'transaksi.id = transaksi_barang.id_transaksi')
+                ->groupBy('transaksi.tanggal')
+                ->orderBy('tanggal', 'DESC')->findAll()
+        ];
+
+        // dd($data);
+        return view('transaksi/index', $data);
+    }
+
+    public function transaksiPrint($nomorInvoice)
+    {
+        // dd($nomorInvoice);
+        $transaksi = $this->Transaksi->where('nomor_invoice', $nomorInvoice)->get()->getFirstRow();
+        $id = $transaksi->id;
+        $barang = $this->TransaksiBarang->where('id_transaksi', $id)->get()->getResultArray();
+
+        $data = [
+            'transaksi' => $transaksi,
+            'barang' => $barang
+        ];
+
+        return view('transaksi/print', $data);
+    }
+    // END TRANSAKSI
 }
