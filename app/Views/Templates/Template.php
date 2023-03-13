@@ -93,8 +93,7 @@
     <script src="<?= base_url(''); ?>/assets/assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
-    <!-- Vendors JS -->
-    <script src="<?= base_url(''); ?>/assets/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
 
     <!-- Main JS -->
     <script src="<?= base_url(''); ?>/assets/assets/js/main.js"></script>

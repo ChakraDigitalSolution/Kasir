@@ -1,0 +1,277 @@
+CRITICAL - 2023-03-08 01:55:55 --> Call to undefined method App\Models\Transaksi::countAllResult
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\Kasir.php(19): CodeIgniter\Model->__call('countAllResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 01:57:55 --> Undefined variable $transaksiHarian
+in APPPATH\Views\index.php on line 17.
+ 1 APPPATH\Views\index.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksiHarian', 'APPPATH\\Views\\index.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(21): view('index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 02:09:49 --> Undefined variable $jumlah
+in APPPATH\Views\index.php on line 51.
+ 1 APPPATH\Views\index.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah', 'APPPATH\\Views\\index.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(28): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 02:20:48 --> Call to undefined method App\Models\Transaksi::getFirstRow
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\Kasir.php(26): CodeIgniter\Model->__call('getFirstRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 04:24:59 --> mysqli_sql_exception: Unknown column '$firstDayOfTheWeek' in 'where clause' in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT SUM(tota...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(tota...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(tota...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(835): CodeIgniter\Database\BaseConnection->query('SELECT SUM(tota...')
+#4 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(41): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->index()
+#6 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-08 04:24:59 --> Unknown column '$firstDayOfTheWeek' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Model.php(835): CodeIgniter\Database\BaseConnection->query('SELECT SUM(total_bayar) as total FROM transaksi where tanggal BETWEEN $firstDayOfTheWeek AND $lastDayOfTheWeek')
+ 2 APPPATH\Controllers\Kasir.php(41): CodeIgniter\Model->__call('query', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 04:25:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Controllers\Kasir.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 04:31:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '2023-03-06'
+AND `tanggal` = '2023-03-12'
+GROUP BY day(tanggal)' at line 3 in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT sum(tota...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(tota...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(tota...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT sum(tota...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(41): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->index()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-08 04:31:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '2023-03-06'
+AND `tanggal` = '2023-03-12'
+GROUP BY day(tanggal)' at line 3
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT sum(total_byar) as total, `tanggal`
+FROM `transaksi`
+WHERE `tanggal` between = :tanggal between:
+AND `tanggal` = :tanggal:
+GROUP BY day(tanggal)', [...], false)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(41): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 04:34:51 --> mysqli_sql_exception: Unknown column 'total_byar' in 'field list' in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT sum(tota...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(tota...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(tota...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT sum(tota...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(44): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->index()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-08 04:34:51 --> Unknown column 'total_byar' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT sum(total_byar) as total, `tanggal`
+FROM `transaksi`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:
+GROUP BY day(tanggal)', [...], false)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(44): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 05:25:58 --> Undefined variable $dataChartWeekly
+in APPPATH\Views\index.php on line 179.
+ 1 APPPATH\Views\index.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataChartWeekly', 'APPPATH\\Views\\index.php', 179)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(52): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-08 05:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-08 05:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-08 06:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-08 06:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-08 06:02:28 --> Undefined variable $r
+in APPPATH\Views\index.php on line 176.
+ 1 APPPATH\Views\index.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $r', 'APPPATH\\Views\\index.php', 176)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(54): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 06:32:47 --> Undefined variable $row
+in APPPATH\Views\index.php on line 144.
+ 1 APPPATH\Views\index.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'APPPATH\\Views\\index.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(50): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 06:48:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SEPARATOR ' - ' jumlah ) as barang
+FROM `transaksi`
+JOIN `transaksi_barang` O...' at line 1 in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(26): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->index()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-08 06:48:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SEPARATOR ' - ' jumlah ) as barang
+FROM `transaksi`
+JOIN `transaksi_barang` O...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.`tanggal` as `tanggal`, `total_bayar`, `uang`, `kembalian`, group_concat(nama, SEPARATOR \' - \' jumlah ) as barang
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`id`=`transaksi_barang`.`id_transaksi`
+WHERE day(tanggal) = :day(tanggal):', [...], false)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(26): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 06:48:49 --> mysqli_sql_exception: Column 'id' in group statement is ambiguous in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(27): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->index()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-08 06:48:49 --> Column 'id' in group statement is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.`tanggal` as `tanggal`, `total_bayar`, `uang`, `kembalian`, group_concat(nama, jumlah ) as barang
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`id`=`transaksi_barang`.`id_transaksi`
+WHERE day(tanggal) = :day(tanggal):
+GROUP BY `id`', [...], false)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(27): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 06:49:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'jumlah ) as barang
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`i...' at line 1 in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(27): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->index()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-08 06:49:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'jumlah ) as barang
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`i...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.`tanggal` as `tanggal`, `total_bayar`, `uang`, `kembalian`, group_concat(nama, \'-\' jumlah ) as barang
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`id`=`transaksi_barang`.`id_transaksi`
+WHERE day(tanggal) = :day(tanggal):
+GROUP BY `transaksi`.`id`', [...], false)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(27): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-08 06:50:51 --> mysqli_sql_exception: Unknown column '-' in 'field list' in C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Project\Kasir\app\Controllers\Kasir.php(27): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kasir->index()
+#7 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\xampp\htdocs\Project\Kasir\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Project\Kasir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-08 06:50:51 --> Unknown column '-' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.`tanggal` as `tanggal`, `total_bayar`, `uang`, `kembalian`, group_concat(nama, `-`, jumlah ) as barang
+FROM `transaksi`
+JOIN `transaksi_barang` ON `transaksi`.`id`=`transaksi_barang`.`id_transaksi`
+WHERE day(tanggal) = :day(tanggal):
+GROUP BY `transaksi`.`id`', [...], false)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(27): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 06:55:35 --> Undefined array key "total"
+in APPPATH\Views\index.php on line 151.
+ 1 APPPATH\Views\index.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total"', 'APPPATH\\Views\\index.php', 151)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Kasir.php(55): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kasir->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
